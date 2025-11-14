@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { io } from "socket.io-client";
 import "./index.css";
 
-const SERVER_URL = "http://localhost:5000";
+const SERVER_URL = "https://real-time-system-zymx.onrender.com/";
 
 export default function Admin() {
   const socket = useRef(null);
