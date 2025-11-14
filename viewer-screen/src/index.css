@@ -1,0 +1,115 @@
+/* FULL SCREEN BACKGROUND */
+.viewer-container {
+  text-align: center;
+  background: #000;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* HEADER WITH LOGO LEFT + TITLE CENTER */
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers title */
+
+  padding: 20px 0;
+}
+
+/* LOGO LEFT SIDE */
+.logo {
+  position: absolute;
+  left: 30px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* CENTER TITLE */
+.event-title {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* BIG NAME DISPLAY */
+.name-box {
+  font-size: 150px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 40px 60px;
+  max-width: 90%;
+  margin: 0 auto;
+  line-height: 1.2;
+  text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.6);
+}
+
+/* FADE IN ANIMATION */
+.fadeIn {
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* QUEUE SECTION */
+.queue-section {
+  margin-top: 40px;
+}
+
+.queue-section h2 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: #00eaff;
+  text-shadow: 0px 0px 15px rgba(0, 234, 255, 0.6);
+}
+
+.queue-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.queue-section li {
+  margin: 12px 0;
+}
+
+/* EMPTY QUEUE */
+.empty {
+  font-size: 35px;
+  opacity: 0.7;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .name-box {
+    font-size: 60px;
+  }
+
+  .queue-section h2 {
+    font-size: 30px;
+  }
+
+  .queue-section ul {
+    font-size: 25px;
+  }
+}

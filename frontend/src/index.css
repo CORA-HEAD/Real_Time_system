@@ -1,0 +1,245 @@
+/* GLOBAL */
+body {
+  background: #0a0b0d;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #ffffff;
+}
+
+.admin-container {
+  width: 65%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* --------- TOP BRANDING --------- */
+.top-branding {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.event-logo {
+  height: 90px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+.top-branding h1 {
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* --------- BRANDING SETTINGS --------- */
+.branding-section {
+  background: #161718;
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 35px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  border: 1px solid #222;
+}
+
+.branding-section h2 {
+  margin-bottom: 18px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.branding-section input {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  margin-bottom: 18px;
+  border: none;
+  border-radius: 10px;
+  background: #222325;
+  color: white;
+  outline: none;
+}
+
+.branding-section input:focus {
+  box-shadow: 0 0 0 2px #0f62fe;
+}
+
+.branding-section button {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  background: #0f62fe;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.branding-section button:hover {
+  background: #0c51d1;
+}
+
+/* --------- CURRENT TURN --------- */
+.current-turn-box {
+  font-size: 30px;
+  margin-bottom: 30px;
+  padding: 22px;
+  background: #161718;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border: 1px solid #222;
+}
+
+.highlight {
+  color: #ffd740;
+  font-weight: bold;
+}
+
+/* --------- ADD PERSON SECTION --------- */
+.add-section form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.add-section input {
+  flex: 1;
+  padding: 14px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background: #222325;
+  color: white;
+}
+
+.add-section button {
+  padding: 14px 22px;
+  font-size: 18px;
+  background: #00e5ff;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-section button:hover {
+  background: #00d4eb;
+}
+
+/* --------- QUEUE SECTION --------- */
+.queue-box {
+  background: #161718;
+  padding: 22px;
+  border-radius: 14px;
+  max-height: 420px;
+  overflow-y: auto;
+  border: 1px solid #222;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.queue-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  font-size: 22px;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.queue-item:last-child {
+  border-bottom: none;
+}
+
+/* ACTION BUTTONS INSIDE QUEUE */
+.actions button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2e2f31;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.actions button:hover {
+  background: #3b3d3f;
+}
+
+/* --------- CONTROL BUTTONS --------- */
+.controls {
+  margin-top: 40px;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.controls button {
+  padding: 16px 34px;
+  font-size: 22px;
+  background: #00c853;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.controls button:hover {
+  background: #00b44a;
+}
+
+.controls button:nth-child(2) {
+  background: #757575;
+}
+
+.controls button:nth-child(2):hover {
+  background: #616161;
+}
+
+.controls button:nth-child(3) {
+  background: #d50000;
+}
+
+.controls button:nth-child(3):hover {
+  background: #b00000;
+}
+
+/* --------- RESPONSIVE --------- */
+@media (max-width: 900px) {
+  .admin-container {
+    width: 90%;
+    padding: 20px 0;
+  }
+
+  .top-branding h1 {
+    font-size: 34px;
+  }
+
+  .queue-item {
+    font-size: 18px;
+  }
+
+  .controls button {
+    font-size: 18px;
+    padding: 12px 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .add-section form {
+    flex-direction: column;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .controls button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Realtime Turn Indicator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body { font-family: Inter, system-ui, sans-serif; margin: 0; padding: 0; background:#f7fafc; color:#111827; }
+      .container { max-width: 900px; margin: 28px auto; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
+      input, button { font-size: 14px; }
+      .turn-card { padding: 14px; border-radius: 8px; background: linear-gradient(90deg,#fef3c7,#fff); border:1px solid #f5d488; display:flex; align-items:center; gap:12px; }
+      .turn-badge { width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:18px; background:#f59e0b; color:white; }
+      .toast { position: fixed; right: 18px; top: 18px; background: rgba(0,0,0,0.75); color: white; padding: 10px 14px; border-radius: 8px; }
+      .user-list { max-height:160px; overflow:auto; padding:8px; border:1px solid #e5e7eb; border-radius:8px; background:#ffffff; }
+      .events { max-height:220px; overflow:auto; padding:8px; border:1px solid #e5e7eb; border-radius:8px; background:#fff;}
+      .set-turn { display:flex; gap:8px; align-items:center; margin-top:12px; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
